@@ -24,7 +24,8 @@ $("#compassQuiz").submit(function(event) {
   for (var answer of answers) {
     scores[answer.value] += 1;
   }
-
+  sumX = 0;
+  sumY = 0;
   for(var animal in scores) {
     sumX += xVals[animal] * scores[animal];
     sumY += yVals[animal] * scores[animal];
