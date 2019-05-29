@@ -49,6 +49,7 @@ $("#compassQuiz").submit(function(event) {
   finalY = sumY / 3;
 
   console.log(finalX)
+  console.log(finalY)
   $("#compassQuiz").css('display', 'none');
   $(".result#"+finalX.toString()+" "+finalY.toString()).css('display', 'block');
 })
