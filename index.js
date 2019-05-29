@@ -2,7 +2,6 @@ $("#compassQuiz").submit(function(event) {
   event.preventDefault();
 
   var answers = $(this).serializeArray();
-  console.log(answers)
   var scores = {
     char1: 0,
     char2: 0,
@@ -34,6 +33,7 @@ $("#compassQuiz").submit(function(event) {
   finalX = sumX / 3;
   finalY = sumY / 3;
 
+  console.log(finalX)
   $("#compassQuiz").css('display', 'none');
   $(".result#"+finalX.toString()+" "+finalY.toString()).css('display', 'block');
 })
