@@ -22,16 +22,16 @@ $("#compassQuiz").submit(function(event) {
   }
 
   for (var answer of answers) {
-    scores[answer.value] += 1
+    scores[answer.value] += 1;
   }
 
   for(var animal in scores) {
-    sumX += xVals[animal] * scores[animal]
-    sumY += yVals[animal] * scores[animal]
+    sumX += xVals[animal] * scores[animal];
+    sumY += yVals[animal] * scores[animal];
   }
 
-  finalX = sumX / 3
-  finalY = sumY / 3
+  finalX = sumX / 3;
+  finalY = sumY / 3;
 
   $("#compassQuiz").css('display', 'none');
   $(".result#"+finalX.toString()+" "+finalY.toString()).css('display', 'block');
