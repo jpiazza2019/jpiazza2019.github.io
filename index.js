@@ -2,7 +2,7 @@ $("#compassQuiz").submit(function(event) {
   event.preventDefault();
 
   var answers = $(this).serializeArray();
-
+  console.log(answers)
   var scores = {
     char1: 0,
     char2: 0,
