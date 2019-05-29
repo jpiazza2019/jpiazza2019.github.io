@@ -3,21 +3,36 @@ $("#compassQuiz").submit(function(event) {
 
   var answers = $(this).serializeArray();
   var scores = {
-    char1: 0,
-    char2: 0,
-    char3: 0
+    hamlet: 0,
+    claudius: 0,
+    ahab: 0,
+    ishmael: 0,
+    mendingwall: 0,
+    janie: 0,
+    estragon: 0,
+    godot: 0
   }
 
-  var xVals = {
-    char1: 1,
-    char2: 2,
-    char3: 3
+  var lawVals = {
+    hamlet: -4,
+    claudius: -5,
+    ahab: 2,
+    ishmael: 3,
+    mendingwall: 6,
+    janie: 1,
+    estragon: 0,
+    godot: 0
   }
 
-  var yVals = {
-    char1: 1,
-    char2: 2,
-    char3: 3
+  var goodVals = {
+    hamlet: -1,
+    claudius: -6,
+    ahab: -4,
+    ishmael: 4,
+    mendingwall: 5,
+    janie: 6,
+    estragon: -2,
+    godot: 0
   }
 
   for (var answer of answers) {
