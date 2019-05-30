@@ -14,7 +14,7 @@ $("#compassQuiz").submit(function(event) {
   }
 
   var lawVals = {
-    hamlet: -4,
+    hamlet: -3,
     claudius: -5,
     ahab: 2,
     ishmael: 3,
@@ -25,12 +25,12 @@ $("#compassQuiz").submit(function(event) {
   }
 
   var goodVals = {
-    hamlet: -1,
+    hamlet: -3,
     claudius: -6,
-    ahab: -4,
-    ishmael: 4,
+    ahab: -2,
+    ishmael: 2,
     mendingwall: 5,
-    janie: 6,
+    janie: 5,
     estragon: -2,
     godot: 0
   }
@@ -51,5 +51,5 @@ $("#compassQuiz").submit(function(event) {
   console.log(finalX)
   console.log(finalY)
   $("#compassQuiz").css('display', 'none');
-  $(".result#"+finalX.toString()+" "+finalY.toString()).css('display', 'block');
+  $(".result#"+(finalX.toString()+" "+finalY.toString())).css('display', 'block');
 })
