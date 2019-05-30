@@ -10,7 +10,7 @@
   <form id="compassQuiz">
 
     <h3>A trolley is heading down the tracks towards five workers who will be killed if the trolley continues on its course. You have the following options, which do you choose?</h3>
-    <input type="radio" name="q1" value="ishmael"> Pull a lever to change the path of the trolley, killing three other people on the other track <br>
+    <input type="radio" name="q1" value="ishmael"> Pull a lever to change the path of the trolley, killing three other people on the other track. <br>
     <input type="radio" name="q1" value="claudius">  Don't pull the lever, hoping it absolves you from anyone thinking you're a murderer. <br>
     <input type="radio" name="q1" value="ahab"> Push a man off the bridge over the tracks onto the tracks, knowing that his body will stop the trolley. <br>
     <input type="radio" name="q1" value="mendingwall"> Try to convince the man next to you to jump off himself in the thirty or so seconds you have left. <br>
@@ -30,8 +30,6 @@
     <input type="radio" name="q3" value="estragon"> Ask the injured crew member why they're having so much trouble deciding to sacrifice themselves. <br>
     <input type="radio" name="q3" value="godot"> Hope that the raft will land safely anyway and do nothing. <br>
 
-
-
     <h3>You've been hearing what you think are screams coming from your neighbor's house every night. How do you proceed?</h3>
     <input type="radio" name="q4" value="ahab"> Go to his house in the middle of the night. <br>
     <input type="radio" name="q4" value="godot">  Don't worry about it; it's not your problem. <br>
@@ -50,10 +48,8 @@
     <input type="submit" value="Submit">
   </form>
 
-  <div>
-    <h2> Your score is </h2>
-  </div>
-
-  <script src="index.js"></script>
+  <script src="index.js">
+    document.write(finalX.toString() + " " + finalY.toString())
+  </script>
 </body>
 </html>

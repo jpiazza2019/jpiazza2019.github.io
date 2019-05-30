@@ -40,13 +40,14 @@ $("#compassQuiz").submit(function(event) {
   }
   sumX = 0;
   sumY = 0;
-  for(var animal in scores) {
-    sumX += lawVals[animal] * scores[animal];
-    sumY += goodVals[animal] * scores[animal];
+
+  for(var char in scores) {
+    sumX += lawVals[char] * scores[char];
+    sumY += goodVals[char] * scores[char];
   }
 
-  finalX = sumX / 3;
-  finalY = sumY / 3;
+  finalX = sumX / 5;
+  finalY = sumY / 5;
 
   console.log(finalX)
   console.log(finalY)
