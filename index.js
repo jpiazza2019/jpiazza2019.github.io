@@ -18,7 +18,7 @@ $("#compassQuiz").submit(function(event) {
     claudius: -5,
     ahab: 2,
     ishmael: 3,
-    mendingwall: 6,
+    mendingwall: 9,
     janie: 1,
     estragon: 0,
     godot: 0
@@ -52,5 +52,7 @@ $("#compassQuiz").submit(function(event) {
   console.log(finalX)
   console.log(finalY)
   $("#compassQuiz").css('display', 'none');
-  document.getElementById("res").innerHTML = (finalX.toString()+" "+finalY.toString())
+  document.getElementById("lawDisplay").innerHTML = ("Lawfulness Score: " + finalX.toString())
+  document.getElementById("goodDisplay").innerHTML = ("Morality Score: " + finalY.toString())
+  document.getElementById("compass").src="compass.png"
 })
