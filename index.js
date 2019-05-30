@@ -52,5 +52,5 @@ $("#compassQuiz").submit(function(event) {
   console.log(finalX)
   console.log(finalY)
   $("#compassQuiz").css('display', 'none');
-  $(".result#"+(finalX.toString()+" "+finalY.toString())).css('display', 'block');
+  document.getElementById("res").innerHTML = (finalX.toString()+" "+finalY.toString())
 })
